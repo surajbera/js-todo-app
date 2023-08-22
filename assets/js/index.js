@@ -33,7 +33,6 @@ const renderTodos = () => {
   } else {
     todoListContainer.innerHTML = '';
   }
-  console.log(todoItems);
 };
 
 const saveIntoLocalStorage = (key, value) => {
