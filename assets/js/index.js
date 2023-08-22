@@ -75,6 +75,7 @@ const onClickHandler = (evt) => {
       const liId = parentLi.getAttribute('data-id');
       const filteredTodos = todoItems.filter((todoItem) => todoItem.id !== Number(liId));
       todoItems = filteredTodos;
+      saveIntoLocalStorage('todo-items', JSON.stringify(todoItems));
       renderTodos();
     }
   }
