@@ -4,7 +4,7 @@
   "description": "Boilerplate code to create a static web page",
   "main": "index.js",
   "scripts": {
-    "compile:tailwindcss": "tailwindcss -i ./assets/css/input.css -o ./dist/style.css --watch",
+    "compile:tailwindcss": "tailwindcss -i ./assets/css/input.css -o ./dist/style.css --watch --minify",
     "build:js": "webpack",
     "dev": "concurrently \"npm run compile:tailwindcss\" \"npm run build:js\""
   },
@@ -31,5 +31,8 @@
   },
   "browserslist": [
     "> .5% or last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "cssnano": "^6.0.1"
+  }
 }
