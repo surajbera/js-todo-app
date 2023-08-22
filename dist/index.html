@@ -16,9 +16,27 @@
 </head>
 
 <body>
-  <section class="bg-gray-400 text-blue-700 font-bold">
-    Hello
-  </section>
+
+  <div class="px-4 py-10">
+    <div class="max-w-xl mx-auto">
+      <!-- form element -->
+      <form autocomplete="off" class="add-todo-form">
+        <div class="relative">
+          <input type="search" id="default-search" name="todo-form-field" autofocus
+            class="block w-full p-4 pr-28 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 todo-form-input"
+            placeholder="Add your next task..." required>
+          <button type="submit"
+            class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 add-todo-submit-btn">
+            Add Todo
+          </button>
+        </div>
+      </form>
+
+      <!-- todo list -->
+      <div class="todo-list-container"></div>
+    </div>
+  </div>
+
   <script src="bundle.js"></script>
 </body>
 

@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: mediumspringgreen;
+.delete-icon {
+  fill: #f87171;
+}
+.todo-text-wrap {
+  max-width: 100%;
+  word-wrap: break-word;
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.todo-text {
+  margin: 0;
+  max-width: calc(100% - 50px);
+}
+
+.todo-checkbox:checked + .todo-text {
+  text-decoration: line-through;
+  color: gray;
 }
