@@ -12,7 +12,10 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,6 +38,10 @@
       <!-- todo list -->
       <div class="todo-list-container"></div>
     </div>
+  </div>
+
+  <div class="clock-wrap fixed bottom-0 right-0 p-5 hidden md:flex">
+    <span id="hour-wrap"></span>:<span id="miniute-wrap"></span>:<span id="seconds-wrap"></span>
   </div>
 
   <script src="bundle.js"></script>

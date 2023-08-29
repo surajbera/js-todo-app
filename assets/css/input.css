@@ -22,3 +22,7 @@
   text-decoration: line-through;
   color: gray;
 }
+
+.clock-wrap {
+  font-family: 'IBM Plex Mono', monospace;
+}
